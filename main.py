@@ -50,7 +50,7 @@ class ScrapAndStoreData:
             data.append(author)
             data.append(date)
         rows = [data[i:i + 5] for i in range(0, len(data), 5)]
-        with open('2022_verge.csv', 'w', encoding='cp1252', newline="") as csvfile:
+        with open('ddmmyyy_verge.csv', 'w', encoding='cp1252', newline="") as csvfile:
             csvwriter = csv.writer(csvfile)
             csvwriter.writerow(header)
             csvwriter.writerows(rows)
@@ -66,7 +66,7 @@ class ScrapAndStoreData:
                         Date TEXT NOT NULL);
                         '''
         cursor.execute(create_table)
-        file = open('2022_verge.csv')
+        file = open('ddmmyyy_verge.csv')
         contents = csv.reader(file)
         insert_records = "INSERT INTO the_Verge (Id, URL, Headline, Author, Date) VALUES(?, ?, ?, ?, ?)"
         cursor.executemany(insert_records, contents)
