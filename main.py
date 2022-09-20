@@ -82,9 +82,9 @@ class ScrapAndStoreData:
 
 
 
-
+st.write("Scrapped Data: ")
 p1 = ScrapAndStoreData()
 p1.get_data()
 p1.csv_store()
 p1.sqlite_store()
-st.write("Vinay")
+
