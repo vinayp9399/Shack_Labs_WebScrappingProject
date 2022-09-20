@@ -77,7 +77,6 @@ class ScrapAndStoreData:
         select_all = "SELECT * FROM the_Verge"
         rows = cursor.execute(select_all).fetchall()
 
-        st.write(rows)
         for r1 in rows:     # Output to the console screen to check
             st.write(r1)
 
