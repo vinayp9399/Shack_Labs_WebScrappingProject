@@ -1,6 +1,7 @@
 import csv
 import sqlite3
 import requests
+import streamlit as st
 from bs4 import BeautifulSoup
 url = "https://www.theverge.com/"
 r = requests.get(url)
@@ -80,7 +81,10 @@ class ScrapAndStoreData:
         connection.close()
 
 
+
+
 p1 = ScrapAndStoreData()
 p1.get_data()
 p1.csv_store()
 p1.sqlite_store()
+st.write("Vinay")
