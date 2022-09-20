@@ -56,8 +56,6 @@ class ScrapAndStoreData:
             csvwriter.writerow(header)
             csvwriter.writerows(rows)
 
-        st.write(data)
-
     def sqlite_store(self):                             #creating and storing the data in sqlite database
         connection = sqlite3.connect('the_verge.db')
         cursor = connection.cursor()
@@ -79,6 +77,7 @@ class ScrapAndStoreData:
         select_all = "SELECT * FROM the_Verge"
         rows = cursor.execute(select_all).fetchall()
 
+        st.write(rows)
         for r1 in rows:     # Output to the console screen to check
             st.write(r1)
 
