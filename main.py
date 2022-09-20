@@ -56,9 +56,8 @@ class ScrapAndStoreData:
             csvwriter.writerow(header)
             csvwriter.writerows(rows)
 
-
     def sqlite_store(self):                             #creating and storing the data in sqlite database
-        connection = sqlite3.connect('the_verge1.db')
+        connection = sqlite3.connect('the_verge.db')
         cursor = connection.cursor()
         create_table = '''CREATE TABLE the_Verge(
                         Id TEXT PRIMARY KEY,
