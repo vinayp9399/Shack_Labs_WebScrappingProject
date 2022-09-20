@@ -56,6 +56,8 @@ class ScrapAndStoreData:
             csvwriter.writerow(header)
             csvwriter.writerows(rows)
 
+        st.write(data)
+
     def sqlite_store(self):                             #creating and storing the data in sqlite database
         connection = sqlite3.connect('the_verge.db')
         cursor = connection.cursor()
@@ -84,7 +86,7 @@ class ScrapAndStoreData:
         connection.close()
 
 
-st.write("Scrapped Data: ")
+st.write("Scrapped Data from The Verge: ")
 p1 = ScrapAndStoreData()
 p1.get_data()
 p1.csv_store()
