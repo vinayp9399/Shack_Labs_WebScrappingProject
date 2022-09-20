@@ -53,11 +53,8 @@ class ScrapAndStoreData:
         rows = [data[i:i + 5] for i in range(0, len(data), 5)]
         with open('ddmmyyy_verge.csv', 'w', encoding='utf-8', newline="") as csvfile:
             csvwriter = csv.writer(csvfile)
-            csvwriter.writerow(header)
-            csvwriter.writerows(rows)
-        st.write(csvfile)
-
-
+            st.write(csvwriter.writerow(header))
+            st.write(csvwriter.writerows(rows))
 
     def sqlite_store(self):                             #creating and storing the data in sqlite database
         connection = sqlite3.connect('the_verge1.db')
