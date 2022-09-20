@@ -51,6 +51,7 @@ class ScrapAndStoreData:
             data.append(author)
             data.append(date)
         rows = [data[i:i + 5] for i in range(0, len(data), 5)]
+        st.write(rows)
         with open('ddmmyyy_verge.csv', 'w', encoding='utf-8', newline="") as csvfile:
             csvwriter = csv.writer(csvfile)
             csvwriter.writerow(header)
@@ -75,7 +76,7 @@ class ScrapAndStoreData:
         rows = cursor.execute(select_all).fetchall()
 
         for r1 in rows:     # Output to the console screen to check
-            st.write(r1)
+            print(r1)
 
         connection.commit()
         connection.close()
