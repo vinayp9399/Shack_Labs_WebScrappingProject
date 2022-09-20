@@ -51,10 +51,13 @@ class ScrapAndStoreData:
             data.append(author)
             data.append(date)
         rows = [data[i:i + 5] for i in range(0, len(data), 5)]
+        for r1 in rows:     # Output to the console screen to check
+            st.write(r1)
         with open('ddmmyyy_verge.csv', 'w', encoding='utf-8', newline="") as csvfile:
             csvwriter = csv.writer(csvfile)
-            st.write(csvwriter.writerow(header))
-            st.write(csvwriter.writerows(rows))
+            csvwriter.writerow(header)
+            csvwriter.writerows(rows)
+
 
     def sqlite_store(self):                             #creating and storing the data in sqlite database
         connection = sqlite3.connect('the_verge1.db')
@@ -76,6 +79,7 @@ class ScrapAndStoreData:
 
         for r1 in rows:     # Output to the console screen to check
             print(r1)
+
 
         connection.commit()
         connection.close()
