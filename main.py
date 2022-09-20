@@ -66,6 +66,9 @@ class ScrapAndStoreData:
                         Author TEXT NOT NULL,
                         Date TEXT NOT NULL);
                         '''
+        sql = "DROP TABLE IF EXISTS the_Verge"
+        cursor.execute(sql)
+
         cursor.execute(create_table)
         file = open('ddmmyyy_verge.csv')
         contents = csv.reader(file)
@@ -77,10 +80,8 @@ class ScrapAndStoreData:
         for r1 in rows:     # Output to the console screen to check
             st.write(r1)
 
-
         connection.commit()
         connection.close()
-
 
 
 st.write("Scrapped Data: ")
@@ -88,4 +89,5 @@ p1 = ScrapAndStoreData()
 p1.get_data()
 p1.csv_store()
 p1.sqlite_store()
+
 
