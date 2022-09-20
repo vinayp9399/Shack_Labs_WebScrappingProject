@@ -66,8 +66,8 @@ class ScrapAndStoreData:
                         Author TEXT NOT NULL,
                         Date TEXT NOT NULL);
                         '''
-        sql = "DROP TABLE IF EXISTS the_Verge"
-        cursor.execute(sql)
+        delete = "DROP TABLE IF EXISTS the_Verge"
+        cursor.execute(delete)
 
         cursor.execute(create_table)
         file = open('ddmmyyy_verge.csv')
