@@ -98,7 +98,16 @@ class ScrapAndStoreData:
         connection.close()
 
 
-st.write("                                         Scrapped Data from The Verge:                                             ")
+#st.write("Scrapped Data from The Verge:")
+title_alignment= """
+<style>
+#SCRAPPED DATA FROM "THE VERGE" {
+  text-align: center
+}
+</style>
+"""
+
+st.markdown(title_alignment, unsafe_allow_html=True)
 p1 = ScrapAndStoreData()
 p1.get_data()
 p1.csv_store()
