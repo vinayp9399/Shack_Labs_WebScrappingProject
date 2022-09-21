@@ -99,7 +99,7 @@ class ScrapAndStoreData:
 
 
 #st.write("Scrapped Data from The Verge:")
-st.markdown("<h1 style='text-align: center; color: darkblue;'>SCRAPPED DATA FROM 'THE VERGE'</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: black;'>SCRAPPED DATA FROM 'THE VERGE'</h1>", unsafe_allow_html=True)
 p1 = ScrapAndStoreData()
 p1.get_data()
 p1.csv_store()
