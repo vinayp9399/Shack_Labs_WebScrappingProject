@@ -25,13 +25,13 @@ class ScrapAndStoreData:
 
         for i in soup.find_all("a", class_="text-white hover:text-franklin"):
             self.title.append(i.text)
-            self.urls.append("www.theverge.com" + i.find_next("a").get('href'))
+            self.urls.append("www.theverge.com" + i.get('href'))
             self.author.append(i.find_next("span", class_="mr-8 text-gray-ef").text)
             self.date.append(i.find_next("span", class_="mr-8 font-light text-gray-ef").text)
 
         for i in soup.find_all("a", class_="text-black hover:text-algae"):
             self.title.append(i.text)
-            self.urls.append("www.theverge.com" + i.find_next("a").get('href'))
+            self.urls.append("www.theverge.com" + i.get('href'))
             self.author.append(i.find_next("span", class_="mr-8 text-gray-13").text)
             self.date.append(i.find_next("span", class_="mr-8 font-light text-gray-13").text)
 
