@@ -90,7 +90,7 @@ class ScrapAndStoreData:
         rows = cursor.execute(select_all).fetchall()
 
         for r1 in rows:     # Output to the console screen to check
-            st.write(r1)
+            st.table(r1)
 
         connection.commit()
         connection.close()
