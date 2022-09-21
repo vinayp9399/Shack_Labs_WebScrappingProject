@@ -23,6 +23,12 @@ class ScrapAndStoreData:
             self.author.append(i.find_next("a", class_="text-franklin hover:shadow-underline-inherit mr-8").text)
             self.date.append(i.find_next("a", class_="text-franklin hover:shadow-underline-inherit mr-8").find_next("span").text)
 
+        for i in soup.find_all("a", class_="text-white hover:text-franklin"):
+            self.title.append(i.text)
+            self.urls.append("www.theverge.com" + i.find_next("a").get('href'))
+            self.author.append(i.find_next("span", class_="mr-8 text-gray-ef").text)
+            self.date.append(i.find_next("span", class_="mr-8 font-light text-gray-ef").text)
+
         for i in soup.find_all("a", class_="hover:shadow-underline-franklin"):
             self.title.append(i.text)
             self.urls.append(f"www.theverge.com{i.get('href')}")

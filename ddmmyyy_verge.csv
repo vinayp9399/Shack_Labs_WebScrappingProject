@@ -1,28 +1,38 @@
 Id,URL,Headline,Author,Date
-0,www.theverge.com/23361782/peloton-row-hands-on-rower-connected-fitness,Peloton Row hands-on: pretty much what you’d expect,Victoria Song,11:00 AM UTC
+0,www.theverge.com/2022/9/20/23363345/tesla-megapack-battery-fire-california-monterey-pg-and-e,"Tesla Megapack battery fire is ‘fully controlled,’ shelter-in-place advisory lifted",Umar Shakir,Two hours ago
 1,www.theverge.com/2022/9/13/23349876/the-verge-website-redesign-new-newsfeed-blogs-logo,Welcome to the new Verge,Nilay Patel,Sep 13
-2,www.theverge.comhttps://www.theverge.com/2022/9/19/23360902/iphone-14-midframe-back-glass-redesign-teardown-fix-apple,Better on the inside,Adi Robertson,23 seconds ago
-3,www.theverge.com/2022/9/7/23341368/apple-iphone-14-dual-esim-no-physical-sim,The iPhone 14 won’t have a SIM tray in the US,Nathan Edwards,Sep 11
-4,www.theverge.com/2022/9/20/23360804/texas-fifth-circuit-ruling-hb20-supreme-court-speech-first-amendment-moderation,Texas has teed up a Supreme Court fight for the future of the internet,Adi Robertson,23 seconds ago
-5,www.theverge.com/2022/9/20/23362010/ring-nation-mgm-amazon-mark-burnett-barry-poznick-civil-rights-cancel,Dozens of civil rights groups are calling on Amazon and MGM to cancel Ring Nation reality show,Charles Pulliam-Moore,An hour ago
-6,www.theverge.com/2022/9/20/23362781/spotify-audiobooks-serial-adnan-syed-hot-pod-summit,Spotify now sells audiobooks,Ariel Shapiro,An hour ago
-7,www.theverge.com/2022/9/20/23361643/amd-ryzen-athlon-7020-mobile-processor-announcement,AMD announces Ryzen 7020 mobile processors for ‘the everyday laptop’,Monica Chin,An hour ago
-8,www.theverge.com/2022/9/19/23361833/serial-adnan-syed-murder-conviction-overturned,Adnan Syed freed after judge vacates murder conviction,Richard Lawler,Two hours ago
-9,www.theverge.com/2022/9/20/23361717/slack-canvas-documents-messaging-google-notion,Slack’s new Canvas feature puts a document editor in your chat window,David Pierce,Two hours ago
-10,www.theverge.com/2022/9/20/23362669/reason-why-people-hate-adobe-photoshop-airdrop-removed-file-sharing,Here’s another example of the frustrating ‘Adobe upsell’,Jess Weatherbed,Two hours ago
-11,www.theverge.com/2022/9/20/23362648/nvidia-rtx-4080-40-series-live-stream-watch-start-time-how-to,How to watch Nvidia’s RTX 40-series announcement,Tom Warren,11:00 AM UTC
-12,www.theverge.com/2022/9/20/23362631/openai-dall-e-ai-art-generator-edit-realistic-faces-safety,OpenAI’s image generator DALL-E can now edit human faces,James Vincent,9:57 AM UTC
-13,www.theverge.com/2022/9/20/23362635/apple-app-store-price-increase-europe-asia,Apple to hike App Store prices across Europe and some parts of Asia next month,Tom Warren,9:13 AM UTC
-14,www.theverge.com/2022/9/20/23356434/youtube-dislike-not-interested-buttons-bad-recommendations-mozilla-report,"YouTube’s ‘dislike’ and ‘not interested’ buttons barely work, study finds",Mia Sato,8:00 AM UTC
-15,www.theverge.com/2022/9/19/23356855/xbox-series-x-game-disc-drm-online-check-in,Microsoft eased up on one DRM hurdle for disc games on Xbox,Mitchell Clark,12:25 AM UTC
-16,www.theverge.com/2022/9/19/23360878/telegram-emoji-reactions-status-profile-link-update,Emoji statuses and ‘infinite’ reactions are among Telegram’s latest features,Umar Shakir,Sep 19
-17,www.theverge.com/2022/9/19/23362054/gmail-political-spam-fundraising-email-campaign-google,Gmail will start spam-proofing political fundraising emails this week,Makena Kelly,Sep 19
-18,www.theverge.com/2022/9/19/23361558/beyond-meat-coo-bites-human-nose,Beyond Meat COO reportedly attempts to consume human nose,Elizabeth Lopatto,Sep 19
-19,www.theverge.com/2022/9/19/23361764/nasa-mars-insight-meteoroid-impact-bloop,Here’s what it sounds like when Mars gets smacked by a space rock,Mary Beth Griggs,Sep 19
-20,www.theverge.com/2022/9/19/23361606/apple-iphone-14-pro-max-camera-shake-fix-update,Apple’s fixing the iPhone 14 Pro’s camera shake,Mitchell Clark,Sep 19
-21,www.theverge.com/2022/9/19/23361358/oneplus-10-pro-5g-att-certification,OnePlus’ flagship phone finally works on all major 5G networks in the US,Allison Johnson,Sep 19
-22,www.theverge.com/2022/9/19/23357145/twitters-alt-text-reminders-expansion-image-descriptions-accessibility,Twitter’s latest feature is a tool to make your feed more accessible,Mia Sato,Sep 19
-23,www.theverge.com/2022/9/19/23361511/uber-hack-blame-lapsus-gta-vi-rockstar,Uber blames Lapsus$ hacking group for security breach,Andrew J. Hawkins,Sep 19
-24,www.theverge.com/2022/9/19/23360049/metal-hellsinger-game-steam,Metal: Hellsinger might be the only rhythm game I’m good at,Alice Newcome-Beill,Sep 19
-25,www.theverge.com/2022/9/19/23361399/sony-playstation-5-redesign-detachable-disc-drive,Sony’s first major PS5 redesign will reportedly have a detachable disc drive,Mitchell Clark,Sep 19
-26,www.theverge.com/2022/9/19/23360967/hurricane-season-atlantic-pacific-typhoon-puerto-rico-fiona-alaska-merbok,"Storm season is in full swing in the US, from Alaska to Puerto Rico",Justine Calma,Sep 19
+2,www.theverge.com/authors/tom-warren,Nvidia announces next-gen RTX 4090 and RTX 4080 GPUs,Tom Warren,Sep 20
+3,www.theverge.com/authors/umar-shakir,"Tesla Megapack battery fire is ‘fully controlled,’ shelter-in-place advisory lifted",Umar Shakir,Sep 21
+4,www.theverge.com/authors/tom-warren,Windows 11’s 2022 Update has something new for everyone,Tom Warren,Sep 20
+5,www.theverge.com/authors/richard-lawler,Judge cuts $7 billion Charter Spectrum verdict for family of a murdered customer to $1 billion,Richard Lawler,Sep 20
+6,www.theverge.com/authors/jay-peters,Apple makes the battery indicator better in new iOS 16.1 beta,Jay Peters,Sep 20
+7,www.theverge.com/2022/9/20/23363345/tesla-megapack-battery-fire-california-monterey-pg-and-e?itm_source=parsely-api,Nvidia announces next-gen RTX 4090 and RTX 4080 GPUs,Tom Warren,Sep 20
+8,www.theverge.com/23361782/peloton-row-hands-on-rower-connected-fitness?itm_source=parsely-api,Tesla Megapack battery fire spurs shelter-in-place warning in California,Umar Shakir,Sep 20
+9,www.theverge.com/2022/9/18/23359156/gta-6-leak-gameplay-footage-90-videos?itm_source=parsely-api,Peloton Row hands-on: pretty much what you’d expect,Victoria Song,Sep 20
+10,www.theverge.com/23359304/microsoft-windows-11-2022-update-review?itm_source=parsely-api,GTA 6 gameplay leaks online in 90 videos,Tom Warren,Sep 18
+11,www.theverge.com/policy,Windows 11’s 2022 Update has something new for everyone,Tom Warren,Sep 20
+12,www.theverge.comhttps://www.theverge.com/2022/9/20/23362864/hacker-crypto-steal-wintermute-theft,"Yes, it happened again.",Ash Parrish,Sep 20
+13,www.theverge.com/2022/9/16/23356279/youtube-shorts-monetization-ads-partner-program-tiktok,YouTube is turning on the money hose for Shorts — and taking on TikTok for real,David Pierce,Sep 16
+14,www.theverge.com/23190907/iphone-lock-screen-customize-ios-16-photo-shuffle-emoji-widgets,How to personalize your iOS 16 lock screen with widgets and wallpaper,Barbara Krasnoff,Sep 20
+15,www.theverge.com/2021/9/13/22671207/deathloop-review-ps5-pc,Deathloop is an intricate mystery that also happens to be an amazing action game,Andrew Webster,"Sep 13, 2021"
+16,www.theverge.com/2022/9/20/23364080/twitch-gambling-ban-stake-slots-roulette-dice-games,Twitch to ban Stake.com streams and other unlicensed gambling content,Ash Parrish,Sep 20
+17,www.theverge.com/2022/9/20/23363892/overwatch-2-lead-hero-designer-resigns-blizzard,Overwatch 2 loses lead hero designer just before sequel launches,Ash Parrish,Sep 20
+18,www.theverge.com/2022/9/20/23363663/razer-leviathan-v2-x-pc-soundbar-compact-rgb,"Razer releases cheaper, more compact Leviathan V2 X PC soundbar",Emma Roth,Sep 20
+19,www.theverge.com/2022/9/20/23363546/meta-quest-vr-v44-update-advanced-camera-settings-stabilization,The new Quest update will stabilize your shaky VR recordings,Mitchell Clark,Sep 20
+20,www.theverge.com/2022/9/20/23363760/mizkif-trainwreckstv-sexual-harassment-twitch-adrianahlee,Streamer involved in Twitch gambling saga now embroiled in sexual assault allegations,Ash Parrish,Sep 20
+21,www.theverge.com/2022/9/20/23363660/apple-ios-16-haptic-keyboard-feedback-battery-life,Turning on haptic keyboard feedback in iOS 16 could affect your battery life,Jay Peters,Sep 20
+22,www.theverge.com/2022/9/20/23363571/charter-spectrum-betty-thomas-murder-forgery-damages,Judge cuts $7 billion Charter Spectrum verdict for family of a murdered customer to $1 billion,Richard Lawler,Sep 20
+23,www.theverge.com/2022/9/20/23363205/google-train-tickets-travel-flights-carbon-emissions,Google search can help you buy train tickets in select countries,Jasmine Hicks,Sep 20
+24,www.theverge.com/2022/9/20/23363513/apple-ios-16-1-beta-2-battery-indicator,Apple makes the battery indicator better in new iOS 16.1 beta,Jay Peters,Sep 20
+25,www.theverge.com/2022/9/20/23363443/youtube-creator-music-licensing-program-monetizing-longform-videos,YouTube will let creators monetize videos with licensed music,Mia Sato,Sep 20
+26,www.theverge.com/23190907/iphone-lock-screen-customize-ios-16-photo-shuffle-emoji-widgets,How to personalize your iOS 16 lock screen with widgets and wallpaper,Barbara Krasnoff,Sep 20
+27,www.theverge.com/2022/9/20/23363056/the-midnight-clubs-trailer-netflix,The Midnight Club’s first trailer looks like The Fault in Our Stars but with vengeful ghosts,Charles Pulliam-Moore,Sep 20
+28,www.theverge.com/2022/9/20/23363323/motorola-e22-e22i-budget-phone-design-specs-price-screen,Motorola’s new budget phones look surprisingly nice,Allison Johnson,Sep 20
+29,www.theverge.com/2022/9/20/23363257/american-airlines-data-breach-disclosure-phishing,American Airlines reveals data breach — two months after it was discovered,Mitchell Clark,Sep 20
+30,www.theverge.com/2022/9/20/23363289/sonic-prime-netflix-teaser-trailer-multiverse-release-window,Netflix’s new Sonic show will be released this winter,Jay Peters,Sep 20
+31,www.theverge.com/2022/9/20/23363286/hulu-hellraiser-trailer-jamie-clayton,Hulu’s Hellraiser reboot is full of puzzles and promise in new trailer,Andrew Webster,Sep 20
+32,www.theverge.com/2022/9/20/23362662/microsoft-windows-11-2022-update-release-download,Here’s how Microsoft is rolling out its first major update to Windows 11,Tom Warren,Sep 20
+33,www.theverge.com/23359304/microsoft-windows-11-2022-update-review,Windows 11’s 2022 Update has something new for everyone,Tom Warren,Sep 20
+34,www.theverge.com/2022/9/20/23362959/vampire-survivors-steam-deck-pc-indie-game-price-increase-deal-sale,Deals PSA: Today’s the last day to buy Vampire Survivors on Steam for just $2.99,Antonio G. Di Benedetto,Sep 20
+35,www.theverge.com/2022/9/20/23363235/apple-antitrust-spotify-epic-games-fortnite-lobbying,Apple quietly bankrolled a lobbying group for app developers,Makena Kelly,Sep 20
+36,www.theverge.com/2022/9/20/23362990/nvidia-dlss-3-0-demonstration-ada-lovelace-graphics-cards-upscaling-technology,"Nvidia shows off DLSS 3, the new version of its impressive upscaling tech",Jon Porter,Sep 20
