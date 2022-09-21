@@ -98,7 +98,7 @@ class ScrapAndStoreData:
         connection.close()
 
 
-st.write("Scrapped Data from The Verge: ")
+st.write("                                         Scrapped Data from The Verge:                                             ")
 p1 = ScrapAndStoreData()
 p1.get_data()
 p1.csv_store()
