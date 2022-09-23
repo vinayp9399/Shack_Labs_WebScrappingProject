@@ -63,7 +63,7 @@ class ScrapAndStoreData:
             data.append(author)
             data.append(date)
         rows = [data[i:i + 5] for i in range(0, len(data), 5)]
-        with open('ddmmyyy_verge.csv', 'w', encoding="cp1252", newline="") as csvfile:
+        with open('ddmmyyy_verge.csv', 'w', encoding="utf-8", newline="") as csvfile:
             csvwriter = csv.writer(csvfile)
             csvwriter.writerow(header)
             csvwriter.writerows(rows)
