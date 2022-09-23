@@ -89,8 +89,8 @@ class ScrapAndStoreData:
         select_all = "SELECT * FROM the_Verge"
         rows = cursor.execute(select_all).fetchall()
 
-        for r1 in rows:     # Output to the console screen to check
-            print(r1)
+        #for r1 in rows:     # Output to the console screen to check
+            #print(r1)
 
         st.table(rows)
 
