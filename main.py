@@ -1,7 +1,7 @@
 import csv
 import sqlite3
 import requests
-import datetime
+import DateTime
 import streamlit as st
 from bs4 import BeautifulSoup
 url = "https://www.theverge.com/"
@@ -54,7 +54,7 @@ class ScrapAndStoreData:
             self.author.append(i.find_next("span", class_="mr-8 text-franklin").text)
             self.date.append(i.find_next("span", class_="mr-8 text-gray-e9").text)
 
-        a = datetime.datetime.now()
+        a = DateTime.DateTime()
         for i in range(len(self.date)):
             if (a.strftime("%b")) not in (self.date[i]):
                 self.date[i] = f'{ a.strftime("%b")} {a.strftime("%d")}'
