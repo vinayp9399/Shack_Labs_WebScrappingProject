@@ -94,17 +94,12 @@ class ScrapAndStoreData:
         cursor.executemany(insert_records, contents)
         select_all = "SELECT * FROM the_Verge"
         rows = cursor.execute(select_all).fetchall()
-
-        #for r1 in rows:     # Output to the console screen to check
-            #print(r1)
-
         st.table(rows)
 
         connection.commit()
         connection.close()
 
 
-#st.write("Scrapped Data from The Verge:")
 st.markdown("<h1 style='text-align: center; color: black;'>Scrapped Data From 'The Verge'</h1>", unsafe_allow_html=True)
 p1 = ScrapAndStoreData()
 p1.get_data()
