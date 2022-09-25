@@ -20,7 +20,7 @@ class ScrapAndStoreData:
 
         for i in soup.find_all("a", class_="group-hover:shadow-highlight-blurple"):
             self.title.append(i.text)
-            self.urls.append(f"www.theverge.com{ i.get('href')}")
+            self.urls.append(f"https://www.theverge.com{ i.get('href')}")
             self.author.append(i.find_next("a", class_="text-franklin hover:shadow-underline-inherit mr-8").text)
             self.date.append(i.find_next("a", class_="text-franklin hover:shadow-underline-inherit mr-8").find_next("span").text)
 
