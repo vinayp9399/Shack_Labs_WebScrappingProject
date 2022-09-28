@@ -73,10 +73,10 @@ class ScrapAndStoreData:
             #self.author.append(i.find_next("span", class_="mr-8 text-franklin").text)
             #self.date.append(i.find_next("span", class_="mr-8 text-gray-e9").text)
 
-        #a = DateTime.DateTime()
-        #for i in range(len(self.date)):
-            #if (a.strftime("%b")) not in (self.date[i]):
-                #self.date[i] = f'{ a.strftime("%b")} {a.strftime("%d")}'
+        a = DateTime.DateTime()
+        for i in range(len(self.date)):
+            if (a.strftime("%d")) not in (self.date[i]):
+                self.date[i] = f'{ a.strftime("%b")} {a.strftime("%d")}'
 
     def csv_store(self):                                       #storing the data in a csv file
         header = ['Id', 'URL', 'Headline', 'Author', 'Date']
