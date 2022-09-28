@@ -1,3 +1,4 @@
+import json
 import csv
 import sqlite3
 import requests
@@ -24,17 +25,35 @@ class ScrapAndStoreData:
             self.author.append(i.find_next("a", class_="text-franklin hover:shadow-underline-inherit mr-8").text)
             self.date.append(i.find_next("a", class_="text-franklin hover:shadow-underline-inherit mr-8").find_next("span").text)
 
-        for i in soup.find_all("a", class_="text-white hover:text-franklin"):
-            self.title.append(i.text)
-            self.urls.append("www.theverge.com" + i.get('href'))
-            self.author.append(i.find_next("span", class_="mr-8 text-gray-ef").text)
-            self.date.append(i.find_next("span", class_="mr-8 font-light text-gray-ef").text)
+        for script in soup.find_all("script", id="__NEXT_DATA__"):
+            res_dict = json.loads(script.contents[0])
+            p = res_dict["props"]["pageProps"]["hydration"]["responses"][0]["data"]["entryGroup"]["recentEntries"][
+                "results"]
+            for i in range(len(p)):
+                self.title.append(p[i]["title"])
+                self.urls.append(p[i]["url"])
+                self.author.append(p[i]["author"]["fullName"])
+                self.date.append(p[i]["publishDate"])
 
-        for i in soup.find_all("a", class_="text-black hover:text-algae"):
-            self.title.append(i.text)
-            self.urls.append("www.theverge.com" + i.get('href'))
-            self.author.append(i.find_next("span", class_="mr-8 text-gray-13").text)
-            self.date.append(i.find_next("span", class_="mr-8 font-light text-gray-13").text)
+
+        #for i in soup.find_all("script", id="__NEXT_DATA__"):
+            #self.title.append(i.find_next("title"))
+            #self.urls.append(i.find_next("url"))
+            #self.author.append(i.find_next("author"))
+            #self.date.append(i.find_next("date"))
+
+
+        #for i in soup.find_all("a", class_="text-white hover:text-franklin"):
+            #self.title.append(i.text)
+            #self.urls.append("www.theverge.com" + i.get('href'))
+            #self.author.append(i.find_next("span", class_="mr-8 text-gray-ef").text)
+            #self.date.append(i.find_next("span", class_="mr-8 font-light text-gray-ef").text)
+
+        #for i in soup.find_all("a", class_="text-black hover:text-algae"):
+            #self.title.append(i.text)
+            #self.urls.append("www.theverge.com" + i.get('href'))
+            #self.author.append(i.find_next("span", class_="mr-8 text-gray-13").text)
+            #self.date.append(i.find_next("span", class_="mr-8 font-light text-gray-13").text)
 
         #for i in soup.find_all("a", class_="hover:shadow-underline-franklin"):
             #self.title.append(i.text)
@@ -42,17 +61,17 @@ class ScrapAndStoreData:
             #self.author.append(i.find_next("a", class_="text-franklin hover:shadow-underline-inherit mr-8").text)
             #self.date.append(i.find_next("a", class_="text-franklin hover:shadow-underline-inherit mr-8").find_next("span").text)
 
-        for i in soup.find_all("a", class_="group-hover:shadow-underline-franklin"):
-            self.title.append(i.text)
-            self.urls.append(f"www.theverge.com{i.get('href')}")
-            self.author.append(i.find_next("a", class_="text-franklin hover:shadow-underline-inherit mr-8").text)
-            self.date.append(i.find_next("a", class_="text-franklin hover:shadow-underline-inherit mr-8").find_next("span").text)
+        #for i in soup.find_all("a", class_="group-hover:shadow-underline-franklin"):
+            #self.title.append(i.text)
+            #self.urls.append(f"www.theverge.com{i.get('href')}")
+            #self.author.append(i.find_next("a", class_="text-franklin hover:shadow-underline-inherit mr-8").text)
+            #self.date.append(i.find_next("a", class_="text-franklin hover:shadow-underline-inherit mr-8").find_next("span").text)
 
-        for i in soup.find_all("h2", class_="mb-4 font-polysans text-20 font-medium tracking-1 leading-110"):
-            self.title.append(i.text)
-            self.urls.append("www.theverge.com" + i.find_next("a").get('href'))
-            self.author.append(i.find_next("span", class_="mr-8 text-franklin").text)
-            self.date.append(i.find_next("span", class_="mr-8 text-gray-e9").text)
+        #for i in soup.find_all("h2", class_="mb-4 font-polysans text-20 font-medium tracking-1 leading-110"):
+            #self.title.append(i.text)
+            #self.urls.append("www.theverge.com" + i.find_next("a").get('href'))
+            #self.author.append(i.find_next("span", class_="mr-8 text-franklin").text)
+            #self.date.append(i.find_next("span", class_="mr-8 text-gray-e9").text)
 
         a = DateTime.DateTime()
         for i in range(len(self.date)):
@@ -105,5 +124,6 @@ p1 = ScrapAndStoreData()
 p1.get_data()
 p1.csv_store()
 p1.sqlite_store()
+
 
 
